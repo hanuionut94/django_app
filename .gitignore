@@ -1,2 +1,8 @@
 django_env/
-__pychche__/
+.venv
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/

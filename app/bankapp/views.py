@@ -9,7 +9,4 @@ def home(request):
 def about(request):
     return render(request, 'about.html')
 
-def signup(request):
-    form = UserCreationForm()
-    return render(request, 'registration/signup.html')
 
