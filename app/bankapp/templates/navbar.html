@@ -17,6 +17,8 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               {% if user.is_authenticated %}
+                <a class="dropdown-item" href="{% url 'change_password' %}">Change password</a>
+                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
               {% else %}
                 <a class="dropdown-item" href="{% url 'login' %}">Login</a>
